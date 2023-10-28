@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+.image-slider{
+    min-height: 30em;
+    height: 100vh;
+    position: relative;
+    background-image: url(./photos/img1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.2s;
+}
+
+.image-slider *{
+    box-sizing: border-box;
+}
+
+
+.leftArr i,
+.rightArr i{
+    font-size: 30px;
+    color: white;
+    border-radius: 50%;
+}
+
+
+.leftArr,
+.rightArr {
+    position: absolute;
+    top: 40%;
+    width: 3em;
+    height: 3em;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.leftArr:hover,
+.rightArr:hover{
+    background: #000;
+    color: #fff;
+}
+
+.leftArr{
+    left: 1em;
+}
+
+.rightArr{
+    right: 1em;
+}
+
+.image-fade{
+    animation: imgFade 0.5s ease-in-out;
+}
+
+@keyframes imgFade {
+    0%{opacity: 0;}
+    100%{opacity: 1 ;}
+}
