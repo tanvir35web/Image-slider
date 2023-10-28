@@ -22,32 +22,29 @@
 
 .leftArr i,
 .rightArr i{
-    font-size: 30px;
+    font-size: 40px;
     color: white;
+    background: transparent;
     border-radius: 50%;
+   
 }
 
 
 .leftArr,
 .rightArr {
     position: absolute;
-    top: 40%;
-    width: 3em;
-    height: 3em;
-    background: #ffffff;
+    top: 50%;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     transition: 0.3s;
 
 }
 
-.leftArr:hover,
-.rightArr:hover{
-    background: #000;
-    color: #fff;
+.leftArr i:hover,
+.rightArr i:hover{
+    
+    color: #000000;
+    background: #ffffff;
 }
 
 .leftArr{
